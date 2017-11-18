@@ -1,0 +1,17 @@
+{
+  "name": "phishr",
+  "version": "1.0.0",
+  "description": "A framework for building phishing emails, and deploying phishing awareness training",
+  "main": "app.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "keywords": [
+    "phishing",
+    "training",
+    "security",
+    "awareness"
+  ],
+  "author": "Carter Ford & Ethan Furtaw",
+  "license": "GPL-3.0"
+}
