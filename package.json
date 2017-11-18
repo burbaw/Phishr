@@ -13,8 +13,5 @@
     "awareness"
   ],
   "author": "Carter Ford & Ethan Furtaw",
-  "license": "GPL-3.0",
-  "dependencies": {
-    "semantic-ui": "^2.2.13"
-  }
+  "license": "GPL-3.0"
 }

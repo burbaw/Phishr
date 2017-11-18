@@ -19,3 +19,7 @@ app.on('ready', () => {
 app.on('window-all-closed', () => {
     app.quit();
 })
+
+ipcMain.on('asynchronous-message', (event, arg) => {
+
+})

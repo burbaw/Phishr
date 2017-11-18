@@ -1,19 +1,41 @@
 <head>
     <title>Phishr</title>
-    <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+    <script>
+        const ipcRenderer = require('electron');
+
+        function mainProcCallback() {
+            
+        }
+    </script>
 </head>
 <body>
     <header>
         Select your Phish
     </header>
-
-    <div id="department-sel">
-        What department would you like to phish for?</br>
-        <select>
-            <option value="it">IT</option>
-            <option value="finance">Finance</option>
-            <option value="marketing">Marketing</option>
-            <option value="clevel">C-Level</option>
-        </select>
-    </div>
+    <form onsubmit="return mainProcCallback()">
+        <div id="department-sel">
+            What department would you like to phish for?</br>
+            <select>
+                <option value="it">IT</option>
+                <option value="finance">Finance</option>
+                <option value="marketing">Marketing</option>
+                <option value="clevel">C-Level</option>
+            </select>
+        </div>
+        <div id="phishlevel-sel">
+            What level of phish would you like to send?</br>
+            <select>
+                <option value="blatant">Really Blatant Phishing Email</option>
+                <option value="obvious">Obvious Phishing Email</option>
+                <option value="suspicious">Suspicious Email</option>
+                <option value="legitimate">Legitimate Looking Email</option>
+            </select>
+        </div>
+        <div id="userlist-sel">
+            Select the users you'd like to phish.
+            <input name="userlist" type="file"><br>
+            <sup>(List of emails, CSV format)</sup>
+        </div>
+        <input type="submit" value="Cast your line!">
+    </form>
 </body>
